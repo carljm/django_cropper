@@ -4,11 +4,11 @@ import os
 setup(
     name = 'django_cropper',
     packages = ['cropper'],
-    package_dir = {
-        'cropper': 'cropper'
-    },
     package_data = {
-        'cropper': ['templates/cropper/*.html']
+        'cropper': ['templates/cropper/*.html',
+                    'assets/*.gif',
+                    'assets/*.js',
+                    'assets/*.css']
     },
     version = '0.1.5a',
     description = 'Image cropping for the Django admin',
